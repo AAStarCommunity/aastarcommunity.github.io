@@ -13,10 +13,6 @@ blocks:
 
       We will commit to Ethereum for long term contribution and construction. We
       will foucus on Account Abstraction in Ethereum Roadmap.
-
-
-      We provide not only open source components, but also totally solutions for
-      end users, project launchers and ecosystem partners.
     text2: >
       ## What are we building?
 
@@ -29,6 +25,9 @@ blocks:
 
 
       Comet ENS, is a meaningful name for your addresses in Ethereum.
+
+
+      More...
     actions:
       - label: Get Started
         type: button
@@ -47,34 +46,34 @@ blocks:
     _template: hero
   - items:
       - icon:
-          name: BiCodeBlock
+          name: BiTransfer
           color: red
           style: float
-        title: Amazing Feature
+        title: Sponsor Every Transaction!
         text: >-
-          Aliquam blandit felis rhoncus, eleifend ipsum in, condimentum nibh.
-          Praesent ac faucibus risus, eu lacinia enim.
+          ETHPaymaster is a decentralized gas sponsor framework for Ethereum
+          ecosystem.
       - icon:
-          name: BiLike
+          name: BiUniversalAccess
           color: primary
           style: float
-        title: This Is a Feature
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.
+        title: Accounts for All!
+        text: >-
+          AirAccount is an Ethereum account solution for end users, project
+          launchers.
       - icon:
           name: BiPalette
           color: green
           style: float
-        title: Configurable Theme
-        text: >-
-          Edit global theme configuration with Tina. Change your theme's primary
-          color, font, or icon set.
+        title: Readable Address!
+        text: Comet ENS is a quick way to make your complicated address be readable.
     color: tint
     _template: features
   - quote: >-
-      There are only two hard things in Computer Science: cache invalidation and
-      naming things.
-    author: Phil Karlton
-    color: primary
+      We provide not only open source components, but also totally solutions for
+      end users, project launchers and ecosystem partners.
+    author: AAStar Developers
+    color: tint
     _template: testimonial
 ---
 
