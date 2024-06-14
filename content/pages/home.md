@@ -75,5 +75,9 @@ blocks:
     author: AAStar Developers
     color: tint
     _template: testimonial
+  - body: >
+      ![](https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202406142039196.png)
+    color: tint
+    _template: content
 ---
 
