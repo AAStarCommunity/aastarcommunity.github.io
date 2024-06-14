@@ -49,7 +49,7 @@ blocks:
           name: BiTransfer
           color: red
           style: float
-        title: Sponsor Every Transaction!
+        title: Sponsor Every Tx!
         text: >-
           ETHPaymaster is a decentralized gas sponsor framework for Ethereum
           ecosystem.
