@@ -1,6 +1,32 @@
 ---
 title: AAStar - An Ethereum Account Abstract Roadmap Builder Community.
 blocks:
+  - items:
+      - icon:
+          name: BiArchiveOut
+          color: ''
+          style: float
+        title: 'Q1: Runnable!'
+        text: >-
+          We jump into ERC4337, RIP7560 and EIP7702 and more, build a runnable
+          paymaster and more.
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+      - icon:
+          name: ''
+          color: ''
+          style: float
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
+    _template: features
   - tagline: Leverage Up the Power of Community for Ethereum AA Roadmap.
     headline: AAStar
     text: >
