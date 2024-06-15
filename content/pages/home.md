@@ -70,13 +70,13 @@ blocks:
     color: tint
     _template: features
   - quote: >-
-      We provide not only open source components, but also totally solutions for
-      end users, project launchers and ecosystem partners.
+      We offer both open source components and complete frameworks for end
+      users, project launchers, and ecosystem partners.
     author: AAStar Developers
     color: tint
     _template: testimonial
   - body: >
-      ![](https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202406142039196.png)
+      ![](/uploadshttps://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202406142039196.png)
     color: tint
     _template: content
 ---
