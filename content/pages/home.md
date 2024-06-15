@@ -24,6 +24,12 @@ blocks:
         text: >-
           We will enhance the interface with applications like community, game
           and creators.
+      - icon:
+          name: BiBoltCircle
+          color: ''
+          style: float
+        title: 'Q4: Communityable'
+        text: 'We will deliver more features, more abilities empowering  communities.'
     _template: features
   - tagline: Leverage Up the Power of Community for Ethereum AA Roadmap.
     headline: AAStar
