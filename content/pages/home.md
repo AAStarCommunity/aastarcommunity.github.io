@@ -17,13 +17,13 @@ blocks:
         title: 'Q2: Useable!'
         text: We try to build some composable components for account gas payment.
       - icon:
-          name: ''
+          name: BiAtom
           color: ''
           style: float
-        title: Here's Another Feature
+        title: 'Q3: Composable!'
         text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
+          We will enhance the interface with applications like community, game
+          and creators.
     _template: features
   - tagline: Leverage Up the Power of Community for Ethereum AA Roadmap.
     headline: AAStar
