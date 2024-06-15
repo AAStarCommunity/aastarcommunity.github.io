@@ -3,7 +3,7 @@ title: AAStar - An Ethereum Account Abstract Roadmap Builder Community.
 blocks:
   - items:
       - icon:
-          name: BiArchiveOut
+          name: BiAnchor
           color: ''
           style: float
         title: 'Q1: Runnable!'
