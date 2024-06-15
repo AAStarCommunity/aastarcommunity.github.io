@@ -66,7 +66,7 @@ blocks:
           color: green
           style: float
         title: Readable Address!
-        text: Comet ENS is a quick way to make your complicated address be readable.
+        text: Comet ENS is a quick way to make your complicated address readable.
     color: tint
     _template: features
   - quote: >-
