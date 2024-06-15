@@ -3,6 +3,14 @@ title: AAStar - An Ethereum Account Abstract Roadmap Builder Community.
 blocks:
   - items:
       - icon:
+          name: BiBeenHere
+          color: ''
+          style: float
+        title: Future...
+        text: >-
+          We are building a Simple Account Solution for Ethereum community
+          following the AA roadmap.
+      - icon:
           name: BiAnchor
           color: ''
           style: float
