@@ -11,13 +11,11 @@ blocks:
           We jump into ERC4337, RIP7560 and EIP7702 and more, build a runnable
           paymaster and more.
       - icon:
-          name: ''
+          name: BiBasketball
           color: ''
           style: float
-        title: Here's Another Feature
-        text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
+        title: Useable!
+        text: We try to build some composable components for account gas payment.
       - icon:
           name: ''
           color: ''
