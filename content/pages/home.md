@@ -39,7 +39,7 @@ blocks:
           We are building a Simple Account Solution for Ethereum community
           following the AA roadmap.
       - icon:
-          name: ''
+          name: BiBookmarkHeart
           color: ''
           style: float
         title: Your Favor?
