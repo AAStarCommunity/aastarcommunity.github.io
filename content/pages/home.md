@@ -111,8 +111,8 @@ blocks:
           color: ''
           style: float
         title: Future...
-        text: >-
-          We are building a Simple Account Solution for Ethereum community
+        text: |-
+          We are building a Simple Account Solution for Ethereum community 
           following the AA roadmap.
       - icon:
           name: BiAlarm
