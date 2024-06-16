@@ -128,10 +128,10 @@ blocks:
           name: BiArch
           color: green
           style: float
-        title: Here's Another Feature
+        title: 'Security AA '
         text: >-
-          This is where you might talk about the feature, if this wasn't just
-          filler text.
+          You can get totally control rights for your contract account with
+          changeable 2FA.
       - icon:
           name: BiBookmarkHeart
           color: ''
