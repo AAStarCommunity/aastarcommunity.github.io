@@ -81,6 +81,14 @@ blocks:
     _template: content
   - items:
       - icon:
+          name: BiAlarm
+          color: orange
+          style: float
+        title: EOA Support
+        text: >-
+          Yeah, we are on the way to EIP7702 which supports EOA seamlessly gas
+          sponsor.
+      - icon:
           name: BiAnchor
           color: ''
           style: float
