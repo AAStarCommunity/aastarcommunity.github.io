@@ -1,6 +1,8 @@
 ---
 title: About
 blocks:
+  - body: "# Teams\n\nAAStar team is committed to providing AA-compatible public goods components for Ethereum. \n\nWe are trying to answer this question: How can we improve Ethereum accounts to make mass adoption possible?\n\nNotion team profile: [https://www.notion.so/planckerdao/Team-Profile-2dc80086797a4ed9ab940e922b133720](https://www.notion.so/planckerdao/Team-Profile-2dc80086797a4ed9ab940e922b133720)\n\nGitHub teams: [https://github.com/orgs/AAStarCommunity/people](https://github.com/orgs/AAStarCommunity/people)\n\nSome research articles: \U0001F3E9[Research list](https://www.notion.so/planckerdao/Research-list-57cd0b8612ad42a3870f157017cfb15d \"Research\") \U0001F4DD[AAStar Working Docs ](https://www.notion.so/planckerdao/AAStar-Working-Docs-e8c9419d8b6b4e38a6022e52b8e1a9b4 \"AAStar Working Docs\")\n"
+    _template: content
   - body: >
       ## What is AAStar?
 
