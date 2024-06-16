@@ -38,7 +38,7 @@ blocks:
         icon: false
         link: /posts
     image:
-      src: /uploads/unsplash-75EFpyXu3Wg.jpg
+      src: /uploads/image-20240616114156246.png
       alt: ERC4337 Basic Paymaster Figure
     color: default
     _template: hero
