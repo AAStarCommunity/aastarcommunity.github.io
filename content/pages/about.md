@@ -85,7 +85,8 @@ blocks:
       ## Operation Contact
 
 
-      Telegram channel 
+      Telegram channel: [AAStar
+      Communi](https://t.me/Account_Abstraction_Community)
     color: default
     _template: content
 ---
