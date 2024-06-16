@@ -36,7 +36,7 @@ blocks:
       **Comet ENS**, is a meaningful name for your addresses in Ethereum.
 
 
-      ## More information?
+      ## More information
 
 
       * GitHub: [AAStar](https://github.com/aaStarCommunity)
