@@ -62,20 +62,22 @@ blocks:
       ## Official docs
 
 
-      website : [https://www.aastar.io](https://www.aastar.io)
+      Website : [https://www.aastar.io](https://www.aastar.io)
 
 
-      docs : https\://docs.aastar.io   https\://docs.aastar.xyz
+      Docs : [https://docs.aastar.io](https://docs.aastar.io)  
+      [https://docs.aastar.xyz](https://docs.aastar.xyz)
 
 
-      dashboard  https\://dashboard.aastar.io
+      Dashboard  [https://dashboard.aastar.io](https://dashboard.aastar.io)
 
 
-      paymaster relay : https\://paymaster.aastar.xyz ,
-      https\://paymaster.aastar.io
+      Paymaster relay : [https://paymaster.aastar.xyz
+      ](https://paymaster.aastar.xyz),
+      [https://paymaster.aastar.io](https://paymaster.aastar.io)
 
 
-      demo : https\://demoweb.aastar.io
+      Demo : [https://demoweb.aastar.io](https://demoweb.aastar.io)
 
 
       ## LICENSE
