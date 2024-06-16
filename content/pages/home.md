@@ -39,9 +39,7 @@ blocks:
         link: /posts
     image:
       src: /uploads/unsplash-75EFpyXu3Wg.jpg
-      alt: >-
-        Photo of palm trees at sunset by Adam Birkett -
-        unsplash.com/photos/75EFpyXu3Wg
+      alt: ERC4337 Basic Paymaster Figure
     color: default
     _template: hero
   - items:
