@@ -16,10 +16,11 @@ blocks:
       **Mission**: Leverage Up the Power of Community for Ethereum AA Roadmap.
 
 
-      Vision: A better digital future for humanity with Simple Account！
+      Vision: A better digital future for humanity with Simple Account by
+      AAStar！
 
 
-      Value: 
+      Value:  A Gift for Human from AAStar Hackers.
 
 
       ## What are we building?
