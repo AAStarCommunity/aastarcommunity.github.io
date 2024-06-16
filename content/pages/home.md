@@ -1,52 +1,6 @@
 ---
 title: AAStar - An Ethereum Account Abstract Roadmap Builder Community.
 blocks:
-  - items:
-      - icon:
-          name: BiAnchor
-          color: ''
-          style: float
-        title: 'Q1: Runnable!'
-        text: >-
-          We jump into ERC4337, RIP7560 and EIP7702 and more, build a runnable
-          paymaster and more.
-      - icon:
-          name: BiBasketball
-          color: ''
-          style: float
-        title: 'Q2: Useable!'
-        text: We try to build some composable components for account gas payment.
-      - icon:
-          name: BiAtom
-          color: ''
-          style: float
-        title: 'Q3: Composable!'
-        text: >-
-          We will enhance the interface with applications like community, game
-          and creators.
-      - icon:
-          name: BiBoltCircle
-          color: ''
-          style: float
-        title: 'Q4: Communityable'
-        text: 'We will deliver more features, more abilities empowering  communities.'
-      - icon:
-          name: BiBeenHere
-          color: ''
-          style: float
-        title: Future...
-        text: >-
-          We are building a Simple Account Solution for Ethereum community
-          following the AA roadmap.
-      - icon:
-          name: BiBookmarkHeart
-          color: ''
-          style: float
-        title: Your Favor?
-        text: >-
-          Please tell me your pain, your favor to us:
-          https://github.com/AAStarCommunity/AAStar-Website/issues/new/choose
-    _template: features
   - tagline: Leverage Up the Power of Community for Ethereum AA Roadmap.
     headline: AAStar
     text: >
@@ -84,10 +38,8 @@ blocks:
         icon: false
         link: /posts
     image:
-      src: /uploads/unsplash-75EFpyXu3Wg.jpg
-      alt: >-
-        Photo of palm trees at sunset by Adam Birkett -
-        unsplash.com/photos/75EFpyXu3Wg
+      src: /uploads/image-20240616115101237.png
+      alt: ERC4337 Basic Paymaster Figure
     color: default
     _template: hero
   - items:
@@ -125,5 +77,67 @@ blocks:
       ![](/uploadshttps://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202406142039196.png)
     color: tint
     _template: content
+  - items:
+      - icon:
+          name: BiAnchor
+          color: ''
+          style: float
+        title: 'Q1: Runnable!'
+        text: >-
+          We jump into ERC4337, RIP7560 and EIP7702 and more, build a runnable
+          paymaster and more.
+      - icon:
+          name: BiBasketball
+          color: ''
+          style: float
+        title: 'Q2: Useable!'
+        text: We try to build some composable components for account gas payment.
+      - icon:
+          name: BiAtom
+          color: ''
+          style: float
+        title: 'Q3: Composable!'
+        text: >-
+          We will enhance the interface with applications like community, game
+          and creators.
+      - icon:
+          name: BiBoltCircle
+          color: ''
+          style: float
+        title: 'Q4: Communityable'
+        text: 'We will deliver more features, more abilities empowering  communities.'
+      - icon:
+          name: BiBeenHere
+          color: ''
+          style: float
+        title: Future...
+        text: |-
+          We are building a Simple Account Solution for 
+          Ethereum community following the AA roadmap.
+      - icon:
+          name: BiAlarm
+          color: orange
+          style: float
+        title: EOA Support
+        text: >-
+          Yeah, we are on the way to EIP7702 which supports EOA seamlessly gas
+          sponsor.
+      - icon:
+          name: BiArch
+          color: green
+          style: float
+        title: 'Security AA '
+        text: >-
+          You can get totally control rights for your contract account with
+          changeable 2FA.
+      - icon:
+          name: BiBookmarkHeart
+          color: ''
+          style: float
+        title: Your Favor?
+        text: >-
+          Please tell us your pain, your favor:
+          https://github.com/AAStarCommunity/AAStar-Website/issues/new/choose
+    _template: features
 ---
 
