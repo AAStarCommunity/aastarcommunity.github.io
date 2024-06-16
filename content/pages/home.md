@@ -81,14 +81,6 @@ blocks:
     _template: content
   - items:
       - icon:
-          name: BiAlarm
-          color: orange
-          style: float
-        title: EOA Support
-        text: >-
-          Yeah, we are on the way to EIP7702 which supports EOA seamlessly gas
-          sponsor.
-      - icon:
           name: BiAnchor
           color: ''
           style: float
@@ -124,6 +116,22 @@ blocks:
         text: >-
           We are building a Simple Account Solution for Ethereum community
           following the AA roadmap.
+      - icon:
+          name: BiAlarm
+          color: orange
+          style: float
+        title: EOA Support
+        text: >-
+          Yeah, we are on the way to EIP7702 which supports EOA seamlessly gas
+          sponsor.
+      - icon:
+          name: BiArch
+          color: green
+          style: float
+        title: Here's Another Feature
+        text: >-
+          This is where you might talk about the feature, if this wasn't just
+          filler text.
       - icon:
           name: BiBookmarkHeart
           color: ''
