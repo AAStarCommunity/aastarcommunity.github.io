@@ -122,7 +122,7 @@ blocks:
           style: float
         title: Your Favor?
         text: >-
-          Please tell me your pain, your favor to us:
+          Please tell us your pain, your favor:
           https://github.com/AAStarCommunity/AAStar-Website/issues/new/choose
     _template: features
 ---
