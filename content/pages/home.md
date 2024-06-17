@@ -135,9 +135,7 @@ blocks:
           color: ''
           style: float
         title: Your Favor?
-        text: >-
-          Please tell us your pain, your favor:
-          https://github.com/AAStarCommunity/AAStar-Website/issues/new/choose
+        text: 'Please tell us your pain, your favor: '
     _template: features
 ---
 
