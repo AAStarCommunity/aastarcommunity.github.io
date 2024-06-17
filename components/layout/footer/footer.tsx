@@ -5,7 +5,8 @@ import { AiFillInstagram } from "react-icons/ai";
 import { Container } from "../../util/container";
 import { RawRenderer } from "./rawRenderer";
 import { useTheme } from "..";
-import { Icon } from "../../util/icon";
+import LogoImg from "../../../assets/aastar/logo-aastar.png";
+import Image from "next/image";
 
 export const Footer = ({ data, icon, rawData }) => {
   const theme = useTheme();
@@ -50,15 +51,7 @@ export const Footer = ({ data, icon, rawData }) => {
             href="/"
             className="group mx-2 flex items-center font-bold tracking-tight text-gray-400 dark:text-gray-300 opacity-50 hover:opacity-100 transition duration-150 ease-out whitespace-nowrap"
           >
-            <Icon
-              parentColor={data.color}
-              data={{
-                name: icon.name,
-                color: data.color === "primary" ? "primary" : icon.color,
-                style: icon.style,
-              }}
-              className="inline-block h-10 w-auto group-hover:text-orange-500"
-            />
+             <Image src={LogoImg}  alt="logo" style={{"width": "5rem"}} />
           </Link>
           <div className="flex gap-4">
             {data.social && data.social.facebook && (
@@ -122,7 +115,7 @@ export const Footer = ({ data, icon, rawData }) => {
               </a>
             )}
           </div>
-          <RawRenderer parentColor={data.color} rawData={rawData} />
+          {/* <RawRenderer parentColor={data.color} rawData={rawData} /> */}
         </div>
         <div
           className={`absolute h-1 bg-gradient-to-r from-transparent ${

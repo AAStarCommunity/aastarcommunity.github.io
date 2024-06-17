@@ -6,6 +6,8 @@ import { useTheme } from ".";
 import { Icon } from "../util/icon";
 import { tinaField } from "tinacms/dist/react";
 import { GlobalHeader } from "../../tina/__generated__/types";
+import Image from "next/image";
+import LogoImg from "../../assets/aastar/logo-aastar.png";
 
 export const Header = ({ data }: { data: GlobalHeader }) => {
   const router = useRouter();
@@ -72,15 +74,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
               href="/"
               className="flex gap-1 items-center whitespace-nowrap tracking-[.002em]"
             >
-              <Icon
-                tinaField={tinaField(data, "icon")}
-                parentColor={data.color}
-                data={{
-                  name: data.icon.name,
-                  color: data.icon.color,
-                  style: data.icon.style,
-                }}
-              />
+              <Image src={LogoImg}  alt="logo" style={{"width": "5rem"}}></Image>
               <span data-tina-field={tinaField(data, "name")}>{data.name}</span>
             </Link>
           </h4>
