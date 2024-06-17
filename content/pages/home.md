@@ -73,8 +73,8 @@ blocks:
     author: AAStar Developers
     color: tint
     _template: testimonial
-  - body: >
-      ![](/uploadshttps://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202406142039196.png)
+  - body: |
+      ![](/uploads/image-20240614203850222.png)
     color: tint
     _template: content
   - items:
