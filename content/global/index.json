@@ -25,9 +25,9 @@
   "footer": {
     "color": "default",
     "social": {
-      "facebook": "",
+      "telegram": "https://t.me/Account_Abstraction_Community",
       "twitter": "https://x.com/aaStarCommunity",
-      "instagram": "/",
+      "medium": "https://medium.com/@AAStarCommunity",
       "github": "https://github.com/AAStarCommunity"
     }
   },
