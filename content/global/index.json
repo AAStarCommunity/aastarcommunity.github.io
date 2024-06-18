@@ -25,8 +25,8 @@
   "footer": {
     "color": "default",
     "social": {
-      "facebook": "/",
-      "twitter": "/",
+      "facebook": "",
+      "twitter": "https://x.com/aaStarCommunity",
       "instagram": "/",
       "github": "https://github.com/AAStarCommunity"
     }
