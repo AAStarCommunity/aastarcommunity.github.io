@@ -74,7 +74,7 @@ blocks:
     color: tint
     _template: testimonial
   - body: |
-      ![](/uploads/image-20240614203850222.png)
+      ![](</uploads/202406201653191 2.png>)
     color: tint
     _template: content
   - items:
