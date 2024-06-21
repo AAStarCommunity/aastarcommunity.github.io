@@ -21,8 +21,9 @@
         "label": "Blog"
       },
       {
-        "href": "",
-        "label": "Doc"
+        "href": "https://docs.aastar.io/",
+        "label": "Doc",
+        "openSite": true
       },
       {
         "href": "https://github.com/AAStarCommunity",
