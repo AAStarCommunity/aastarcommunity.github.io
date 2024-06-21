@@ -23,6 +23,10 @@
       {
         "href": "",
         "label": "Doc"
+      },
+      {
+        "href": "home",
+        "label": "Github"
       }
     ]
   },
