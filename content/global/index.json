@@ -10,7 +10,8 @@
     "nav": [
       {
         "href": "home",
-        "label": "Home"
+        "label": "Home",
+        "openSite": false
       },
       {
         "href": "about",
@@ -28,6 +29,11 @@
       {
         "href": "https://github.com/AAStarCommunity",
         "label": "Github",
+        "openSite": true
+      },
+      {
+        "href": "https://dashboard.aastar.io/",
+        "label": "Dashboard",
         "openSite": true
       }
     ]
