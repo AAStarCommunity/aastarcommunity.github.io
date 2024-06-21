@@ -26,7 +26,8 @@
       },
       {
         "href": "https://github.com/AAStarCommunity",
-        "label": "Github"
+        "label": "Github",
+        "openSite": true
       }
     ]
   },
