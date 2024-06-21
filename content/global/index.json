@@ -19,10 +19,6 @@
       {
         "href": "posts",
         "label": "Blog"
-      },
-      {
-        "href": "https://docs.aastar.io/",
-        "label": "Doc"
       }
     ]
   },
