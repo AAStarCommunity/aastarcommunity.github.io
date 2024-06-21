@@ -43,6 +43,7 @@ const Global: Collection = {
             defaultItem: {
               href: "home",
               label: "Home",
+              openSite: false
             },
           },
           fields: [
@@ -55,6 +56,11 @@ const Global: Collection = {
               type: "string",
               label: "Label",
               name: "label",
+            },
+            {
+              type: "boolean",
+              label: "Open Site",
+              name: "openSite",
             },
           ],
         },
