@@ -74,7 +74,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
               href="/"
               className="flex gap-1 items-center whitespace-nowrap tracking-[.002em]"
             >
-              <Image src={LogoImg}  alt="logo" style={{"width": "5rem"}}></Image>
+              <Image src={LogoImg} alt="logo" style={{ width: "5rem" }}></Image>
               <span data-tina-field={tinaField(data, "name")}>{data.name}</span>
             </Link>
           </h4>
@@ -92,52 +92,103 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
                       activeItem ? activeItemClasses[theme.color] : ""
                     }`}
                   >
-                    <Link
-                      data-tina-field={tinaField(item, "label")}
-                      href={`/${item.href}`}
-                      className={`relative select-none	text-base inline-block tracking-wide transition duration-150 ease-out hover:opacity-100 py-8 px-4 ${
-                        activeItem ? `` : `opacity-70`
-                      }`}
-                    >
-                      {item.label}
-                      {activeItem && (
-                        <svg
-                          className={`absolute bottom-0 left-1/2 w-[180%] h-full -translate-x-1/2 -z-1 opacity-10 dark:opacity-15 ${
-                            activeBackgroundClasses[theme.color]
-                          }`}
-                          preserveAspectRatio="none"
-                          viewBox="0 0 230 230"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect
-                            x="230"
-                            y="230"
-                            width="230"
-                            height="230"
-                            transform="rotate(-180 230 230)"
-                            fill="url(#paint0_radial_1_33)"
-                          />
-                          <defs>
-                            <radialGradient
-                              id="paint0_radial_1_33"
-                              cx="0"
-                              cy="0"
-                              r="1"
-                              gradientUnits="userSpaceOnUse"
-                              gradientTransform="translate(345 230) rotate(90) scale(230 115)"
-                            >
-                              <stop stopColor="currentColor" />
-                              <stop
-                                offset="1"
-                                stopColor="currentColor"
-                                stopOpacity="0"
-                              />
-                            </radialGradient>
-                          </defs>
-                        </svg>
-                      )}
-                    </Link>
+                    {item.openSite && (
+                      <a
+                        data-tina-field={tinaField(item, "label")}
+                        href={`${item.href}`}
+                        target="_blank"
+                        className={`relative select-none	text-base inline-block tracking-wide transition duration-150 ease-out hover:opacity-100 py-8 px-4 ${
+                          activeItem ? `` : `opacity-70`
+                        }`}
+                      >
+                        {item.label}
+                        {activeItem && (
+                          <svg
+                            className={`absolute bottom-0 left-1/2 w-[180%] h-full -translate-x-1/2 -z-1 opacity-10 dark:opacity-15 ${
+                              activeBackgroundClasses[theme.color]
+                            }`}
+                            preserveAspectRatio="none"
+                            viewBox="0 0 230 230"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="230"
+                              y="230"
+                              width="230"
+                              height="230"
+                              transform="rotate(-180 230 230)"
+                              fill="url(#paint0_radial_1_33)"
+                            />
+                            <defs>
+                              <radialGradient
+                                id="paint0_radial_1_33"
+                                cx="0"
+                                cy="0"
+                                r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(345 230) rotate(90) scale(230 115)"
+                              >
+                                <stop stopColor="currentColor" />
+                                <stop
+                                  offset="1"
+                                  stopColor="currentColor"
+                                  stopOpacity="0"
+                                />
+                              </radialGradient>
+                            </defs>
+                          </svg>
+                        )}
+                      </a>
+                    )}
+                    {!item.openSite && (
+                      <Link
+                        data-tina-field={tinaField(item, "label")}
+                        href={`/${item.href}`}
+                        className={`relative select-none	text-base inline-block tracking-wide transition duration-150 ease-out hover:opacity-100 py-8 px-4 ${
+                          activeItem ? `` : `opacity-70`
+                        }`}
+                      >
+                        {item.label}
+                        {activeItem && (
+                          <svg
+                            className={`absolute bottom-0 left-1/2 w-[180%] h-full -translate-x-1/2 -z-1 opacity-10 dark:opacity-15 ${
+                              activeBackgroundClasses[theme.color]
+                            }`}
+                            preserveAspectRatio="none"
+                            viewBox="0 0 230 230"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              x="230"
+                              y="230"
+                              width="230"
+                              height="230"
+                              transform="rotate(-180 230 230)"
+                              fill="url(#paint0_radial_1_33)"
+                            />
+                            <defs>
+                              <radialGradient
+                                id="paint0_radial_1_33"
+                                cx="0"
+                                cy="0"
+                                r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(345 230) rotate(90) scale(230 115)"
+                              >
+                                <stop stopColor="currentColor" />
+                                <stop
+                                  offset="1"
+                                  stopColor="currentColor"
+                                  stopOpacity="0"
+                                />
+                              </radialGradient>
+                            </defs>
+                          </svg>
+                        )}
+                      </Link>
+                    )}
                   </li>
                 );
               })}
