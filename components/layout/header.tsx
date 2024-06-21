@@ -78,7 +78,7 @@ export const Header = ({ data }: { data: GlobalHeader }) => {
               <span data-tina-field={tinaField(data, "name")}>{data.name}</span>
             </Link>
           </h4>
-          <ul className="flex gap-6 sm:gap-8 lg:gap-10 tracking-[.002em] -mx-4">
+          <ul className="flex  tracking-[.002em] -mx-4">
             {data.nav &&
               data.nav.map((item, i) => {
                 const activeItem =
