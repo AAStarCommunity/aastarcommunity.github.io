@@ -75,8 +75,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build TinaCMS
         env:
-          NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_TINA_CLIENT_ID }}
-          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          NEXT_PUBLIC_TINA_CLIENT_ID: "ef55bd7a-5ca8-4c61-985b-e3c326fa4975"
+          TINA_TOKEN: "e39514ebcc67ac9d9c6a7d118c0f8bcede4c7b29"
           NEXT_PUBLIC_TINA_BRANCH: main
         run: yarn build
 
