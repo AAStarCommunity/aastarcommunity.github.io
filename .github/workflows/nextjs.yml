@@ -79,6 +79,10 @@ jobs:
           TINA_TOKEN: "e39514ebcc67ac9d9c6a7d118c0f8bcede4c7b29"
           NEXT_PUBLIC_TINA_BRANCH: main
         run: yarn build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
 
   # Deployment job
   deploy:
