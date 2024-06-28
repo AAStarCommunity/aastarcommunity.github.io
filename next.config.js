@@ -4,10 +4,6 @@ module.exports = {
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,
       use: ["@svgr/webpack"],
-      output: "export",
-      images: {
-        unoptimized: true,
-      },
     });
 
     return config;
