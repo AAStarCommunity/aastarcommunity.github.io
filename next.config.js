@@ -5,7 +5,9 @@ module.exports = {
       issuer: /\.[jt]sx?$/,
       use: ["@svgr/webpack"],
       output: "export",
-      unoptimized: true,
+      images: {
+        unoptimized: true,
+      },
     });
 
     return config;
