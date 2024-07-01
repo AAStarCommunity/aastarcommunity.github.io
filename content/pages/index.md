@@ -32,7 +32,7 @@ blocks:
       - label: Get Started
         type: button
         icon: true
-        link: /posts
+        link: 'https://demoweb.aastar.io/'
       - label: Read Blog
         type: link
         icon: false
@@ -138,5 +138,4 @@ blocks:
         text: 'Please tell us your pain, your favor: '
     _template: features
 ---
-
 
