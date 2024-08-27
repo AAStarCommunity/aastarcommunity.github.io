@@ -57,7 +57,6 @@ blocks:
     _template: features
   - quote: |-
       1. Open source components
-
       2. Complete frameworks 
       for end users, project launchers, and ecosystem partners.
     author: AAStar Developers
