@@ -7,7 +7,8 @@ blocks:
       AAStar^ is a subgroup of Plancker^ community. 
 
 
-      We launched AAStar after a conversation at Zuzalu, Montenegro in 2023.
+      We launched AAStar community after a conversation at Zuzalu, Montenegro in
+      2023.
 
 
       1\. ETHPaymaster: Sponsor Every Tx! [Demo]()\
