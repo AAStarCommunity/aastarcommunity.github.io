@@ -54,7 +54,7 @@ blocks:
     _template: features
   - quote: |-
       AAStar offer: Open source Framework
-      and Complete solutions.
+      and Complete Solutions.
     author: AAStar Community
     color: tint
     _template: testimonial
