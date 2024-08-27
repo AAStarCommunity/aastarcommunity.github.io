@@ -1,33 +1,21 @@
 ---
 title: AAStar - An Ethereum Account Abstract Roadmap Builder Community.
 blocks:
-  - tagline: Leverage Up the Power of Community for Ethereum AA Roadmap.
+  - tagline: 'Account Abstraction, ERC4337, EIP7702, RIP7560'
     headline: AAStar
     text: >
-      ## Who we are?
+      AAStar^ is a subgroup of Plancker^ community. We launched AAStar after a
+      conversation at Zuzalu, Montenegro in 2023.
 
 
-      **AAStar^ is a subgroup of Plancker^ community. We launched AAStar after a
-      conversation with Vitalik at Zuzalu, Mountainegro in 2022.**
+      1\. ETHPaymaster: Sponsor Every Tx! [Demo]()\
 
+      2\. AirAccount: Accounts for All! [Demo]()\
 
-      We will commit to Ethereum for long term contribution and construction. We
-      will foucus on Account Abstraction in Ethereum Roadmap.
-    text2: >
-      ## What are we building?
+      3\. CometENS: Your name, Your Account! [Testing]()\
 
-
-      ETHPaymaster, is a simple gas payment framework utilizing ERC4337 and
-      EIP7702.
-
-
-      AirAccount, is a easy interface for your Ethereum account life cycle.
-
-
-      Comet ENS, is a meaningful name for your addresses in Ethereum.
-
-
-      More...
+      4\. Cos72: Yet Another DAO/Community Tool. [Demo](cos72.netlify.app).
+    text2: ''
     actions:
       - label: Get Started
         type: button
