@@ -3,17 +3,14 @@ title: AAStar - An Ethereum Account Abstract Roadmap Builder Community.
 blocks:
   - tagline: 'Account Abstraction, ERC4337, EIP7702, RIP7560'
     headline: AAStar
-    text: >
-      AAStar^ is a subgroup of Plancker^ community. We launched AAStar after a
-      conversation at Zuzalu, Montenegro in 2023.
+    text: |
+      AAStar^ is a subgroup of Plancker^ community. 
 
+      We launched AAStar after a conversation at Zuzalu, Montenegro in 2023.
 
       1\. ETHPaymaster: Sponsor Every Tx! [Demo]()\
-
       2\. AirAccount: Accounts for All! [Demo]()\
-
       3\. CometENS: Your name, Your Account! [Testing]()\
-
       4\. Cos72: Yet Another DAO/Community Tool. [Demo](cos72.netlify.app).
     text2: ''
     actions:
