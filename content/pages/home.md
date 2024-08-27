@@ -14,7 +14,7 @@ blocks:
 
       2\. AirAccount: Accounts for All! [Demo]()\
 
-      3\. CometENS: Your name, Your Account! [Demo]()\
+      3\. CometENS: Your name, Your Account! [Demo](https://cometens.aastar.io)\
 
       4\. Cos72: Yet Another DAO/Community Tool.
       [Demo](https://cos72.netlify.app).
