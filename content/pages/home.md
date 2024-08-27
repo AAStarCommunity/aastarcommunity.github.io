@@ -55,9 +55,11 @@ blocks:
         text: Comet ENS is a quick way to make your complicated address readable.
     color: tint
     _template: features
-  - quote: >-
-      We offer both open source components and complete frameworks for end
-      users, project launchers, and ecosystem partners.
+  - quote: |-
+      1. Open source components
+
+      2. Complete frameworks 
+      for end users, project launchers, and ecosystem partners.
     author: AAStar Developers
     color: tint
     _template: testimonial
