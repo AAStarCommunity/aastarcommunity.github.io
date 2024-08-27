@@ -56,10 +56,9 @@ blocks:
     color: tint
     _template: features
   - quote: |-
-      1. Open source components
-      2. Complete frameworks 
-      for end users, project launchers, and ecosystem partners.
-    author: AAStar Developers
+      AAStar offer: Open source Framework
+      and Complete solutions.
+    author: AAStar Community
     color: tint
     _template: testimonial
   - body: |
