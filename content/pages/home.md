@@ -4,16 +4,18 @@ blocks:
   - tagline: 'Account Abstraction, ERC4337, EIP7702, RIP7560'
     headline: AAStar
     text: >
-      AAStar^ is a subgroup of Plancker^ community. 
+      AAStar^ is a subgroup of Plancker^ community.
 
 
       We launched AAStar community after a conversation at Zuzalu, Montenegro in
       2023.
 
 
-      1\. ETHPaymaster: Sponsor Every Tx! [Demo]()\
+      1\. ETHPaymaster: Sponsor Every Tx!
+      [Demo](https://cos72.netlify.app/tutorail)\
 
-      2\. AirAccount: Accounts for All! [Demo]()\
+      2\. AirAccount: Accounts for All!
+      [Demo](https://cos72.netlify.app/tutorail)\
 
       3\. CometENS: Your name, Your Account! [Demo](https://cometens.aastar.io)\
 
