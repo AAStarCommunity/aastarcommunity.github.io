@@ -12,10 +12,10 @@ blocks:
 
 
       1\. ETHPaymaster: Sponsor Every Tx!
-      [Demo](https://cos72.netlify.app/tutorail)\
+      [Demo](https://cos72.netlify.app/tutorial)\
 
       2\. AirAccount: Accounts for All!
-      [Demo](https://cos72.netlify.app/tutorail)\
+      [Demo](https://cos72.netlify.app/tutorial)\
 
       3\. CometENS: Your name, Your Account! [Demo](https://cometens.aastar.io)\
 
