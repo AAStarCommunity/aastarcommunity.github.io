@@ -23,16 +23,17 @@ fi
 
 echo "=== 构建成功! 生成的静态文件在 ./out 目录 ==="
 
-# 检查父目录中的工作流文件是否有更改
-if [ -f "../.github/workflows/nextjs.yml" ]; then
-  GIT_STATUS=$(cd .. && git status --porcelain .github/workflows/nextjs.yml)
-  if [ ! -z "$GIT_STATUS" ]; then
-    echo ""
-    echo "警告: 检测到../.github/workflows/nextjs.yml有更改但未提交"
-    echo "请确保在推送后，使用以下命令提交工作流文件更改:"
-    echo "  cd .. && git add .github/workflows/nextjs.yml && git commit -m \"更新工作流文件\" && git push"
-    echo ""
-  fi
+# 查找Git目录
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+echo "脚本所在目录: $SCRIPT_DIR"
+
+# 确保Git初始化
+if [ ! -d "$SCRIPT_DIR/.git" ]; then
+  echo "未找到.git目录，正在执行git初始化..."
+  git init
+  git remote add origin https://github.com/AAStarCommunity/aastarcommunity.github.io.git
+else
+  echo "找到.git目录，继续执行..."
 fi
 
 # 4. 添加并提交变更
@@ -63,4 +64,4 @@ echo "=== 推送到远程仓库 ==="
 git push
 
 echo "=== 完成! ==="
-echo "网站将在GitHub Actions完成后自动部署" 
+echo "网站将在GitHub Pages上自动更新" 
