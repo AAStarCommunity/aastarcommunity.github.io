@@ -10,11 +10,7 @@ export function getAssetPath(path: string): string {
   // 移除开头的斜杠以防止路径重复
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   
-  // 在生产环境中添加basePath前缀
-  if (process.env.NODE_ENV === 'production') {
-    return `/AAStar-Website/${cleanPath}`;
-  }
-  
-  // 开发环境使用相对路径
+  // 由于使用的是组织主页，不需要添加前缀
+  // 直接返回路径即可
   return `/${cleanPath}`;
 }

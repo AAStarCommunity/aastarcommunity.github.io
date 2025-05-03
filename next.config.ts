@@ -11,8 +11,9 @@ const assetPrefix = isGithubActions ? `/${repoName}/` : '';
 const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',  // 启用静态导出，生成out目录
-  basePath: process.env.NODE_ENV === 'production' ? '/AAStar-Website' : '',  // 为GitHub Pages设置子路径
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/AAStar-Website/' : '',  // 为资源设置前缀
+  // 由于仓库名是aastarcommunity.github.io，使用组织主页，不需要basePath和assetPrefix
+  basePath: '',  // 为GitHub Pages设置子路径
+  assetPrefix: '',  // 为资源设置前缀
   images: {
     domains: ['raw.githubusercontent.com'],
     remotePatterns: [

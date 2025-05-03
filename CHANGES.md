@@ -1,5 +1,22 @@
 # AAStar Website 修改日志
 
+## 版本 0.1.9 (2024-05-03)
+
+### 修复
+- 修复CSS和图片加载问题
+- 移除next.config.ts中的basePath和assetPrefix配置，直接使用根路径
+- 更新getAssetPath函数，不再添加'/AAStar-Website'前缀
+- 更新页面中的图片路径引用，直接使用相对路径
+
+### 影响的文件
+- next.config.ts - 更新资源路径配置
+- lib/utils.ts - 更新资源路径工具函数
+- app/page.tsx - 更新图片引用路径
+
+### 潜在影响
+- 修复了GitHub Pages部署后CSS和图片加载问题
+- 确保网站在组织主页上能正确显示所有资源
+
 ## 版本 0.1.8 (2024-05-03)
 
 ### 修复
