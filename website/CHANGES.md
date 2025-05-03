@@ -1,5 +1,18 @@
 # AAStar Website 修改日志
 
+## 版本 0.1.4 (2024-05-03)
+
+### 修复
+- 修复GitHub Actions工作流文件未被正确提交的问题
+- 确保GitHub Actions直接部署静态内容，完全跳过构建步骤
+
+### 影响的文件
+- ../.github/workflows/nextjs.yml - 确保工作流文件被正确提交
+
+### 潜在影响
+- 修复了GitHub Actions仍尝试检测包管理器的问题
+- 确保GitHub Actions直接部署静态内容，无需在线构建
+
 ## 版本 0.1.3 (2024-05-03)
 
 ### 修复

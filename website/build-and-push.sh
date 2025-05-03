@@ -23,6 +23,18 @@ fi
 
 echo "=== 构建成功! 生成的静态文件在 ./out 目录 ==="
 
+# 检查父目录中的工作流文件是否有更改
+if [ -f "../.github/workflows/nextjs.yml" ]; then
+  GIT_STATUS=$(cd .. && git status --porcelain .github/workflows/nextjs.yml)
+  if [ ! -z "$GIT_STATUS" ]; then
+    echo ""
+    echo "警告: 检测到../.github/workflows/nextjs.yml有更改但未提交"
+    echo "请确保在推送后，使用以下命令提交工作流文件更改:"
+    echo "  cd .. && git add .github/workflows/nextjs.yml && git commit -m \"更新工作流文件\" && git push"
+    echo ""
+  fi
+fi
+
 # 4. 添加并提交变更
 echo "=== 添加和提交静态文件 ==="
 git add out/

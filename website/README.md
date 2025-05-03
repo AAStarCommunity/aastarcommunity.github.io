@@ -49,8 +49,19 @@ chmod +x build-and-push.sh
 3. The script will:
    - Build the Next.js site locally
    - Add the generated `out` directory to git
+   - Check for changes in GitHub Actions workflow files
    - Commit and push the changes
    - GitHub Actions will then automatically deploy the pre-built files to GitHub Pages
+
+4. **Important**: If you've modified the GitHub Actions workflow files, you need to commit those separately:
+
+```bash
+# From the project root, not the website subdirectory
+cd ..
+git add .github/workflows/nextjs.yml
+git commit -m "Update GitHub workflow file"
+git push
+```
 
 ### Manual Process
 
@@ -68,6 +79,12 @@ git add .
 git commit -m "Update website"
 
 # Push to GitHub
+git push
+
+# If you've modified GitHub Actions workflow files
+cd ..
+git add .github/workflows/
+git commit -m "Update GitHub workflow files"
 git push
 ```
 
