@@ -1,5 +1,20 @@
 # AAStar Website 修改日志
 
+## 版本 0.1.1 (2024-05-03)
+
+### 修复
+- 修复GitHub Actions工作流，添加对pnpm包管理器的支持
+- 更新工作流缓存配置以包含pnpm-lock.yaml
+- 使用pnpm/action-setup安装pnpm
+- 修复构建命令使用检测到的包管理器而非硬编码yarn
+
+### 影响的文件
+- .github/workflows/nextjs.yml - 添加pnpm支持
+
+### 潜在影响
+- 修复了GitHub Actions自动部署失败问题
+- 优化了CI/CD流程对pnpm的支持
+
 ## 版本 0.1.0 (2024-05-03)
 
 ### 修复
