@@ -11,7 +11,7 @@ blocks:
       2023.
 
 
-      1\. ETHPaymaster: Sponsor Every Tx!
+      1\. SuperPaymaster: Sponsor Every Tx!
       [Demo](https://cos72.netlify.app/tutorial)\
 
       2\. AirAccount: Accounts for All!
@@ -43,7 +43,7 @@ blocks:
           style: float
         title: Sponsor Every Tx!
         text: >-
-          ETHPaymaster is a decentralized gas sponsor framework for Ethereum
+          SuperPaymaster is a decentralized gas sponsor framework for Ethereum
           ecosystem.
       - icon:
           name: BiUniversalAccess

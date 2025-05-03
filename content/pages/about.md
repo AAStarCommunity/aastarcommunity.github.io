@@ -26,7 +26,7 @@ blocks:
       ## What are we building?
 
 
-      **ETHPaymaster**, is a simple gas payment framework utilizing ERC4337 and
+      **SuperPaymaster**, is a simple gas payment framework utilizing ERC4337 and
       EIP7702.
 
 

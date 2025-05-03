@@ -55,7 +55,7 @@ We will commit to the Ethereum for long term contribution and construction. We w
 
 ## What are we building?
 
-*   **ETHPaymaster**: A simple gas payment framework utilizing ERC4337 and EIP7702.
+*   **SuperPaymaster**: A simple gas payment framework utilizing ERC4337 and EIP7702.
 *   **AirAccount**: An easy interface for your Ethereum account life cycle.
 *   **Comet ENS**: A meaningful name for your addresses in Ethereum.
 *   **More...**
