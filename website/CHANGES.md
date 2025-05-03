@@ -1,5 +1,39 @@
 # AAStar Website 修改日志
 
+## 版本 0.1.3 (2024-05-03)
+
+### 修复
+- 在next.config.ts中添加静态导出配置 `output: 'export'`
+- 为静态导出添加图片优化禁用配置 `unoptimized: true`
+- 更新build-and-push.sh脚本，改进错误提示
+
+### 影响的文件
+- website/next.config.ts - 添加静态导出配置
+- website/build-and-push.sh - 改进错误提示
+
+### 潜在影响
+- 修复了本地构建不生成out目录的问题
+- 确保静态导出时图片能正常显示
+
+## 版本 0.1.2 (2024-05-03)
+
+### 优化
+- 简化GitHub Actions工作流，移除在线构建步骤，直接部署本地构建的静态文件
+- 修改.gitignore文件，不再忽略out目录，允许提交构建后的静态文件
+- 添加build-and-push.sh脚本，简化本地构建和推送流程
+- 更新README.md，添加GitHub Pages部署说明
+
+### 影响的文件
+- .github/workflows/nextjs.yml - 简化为仅部署预构建的静态文件
+- website/.gitignore - 允许提交out目录
+- website/build-and-push.sh - 新增脚本
+- website/README.md - 添加部署说明
+
+### 潜在影响
+- 加快了GitHub Pages部署速度
+- 减少了GitHub Actions中的构建错误可能性
+- 提供了更简单的本地构建和部署流程
+
 ## 版本 0.1.1 (2024-05-03)
 
 ### 修复

@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: 'export',  // 启用静态导出，生成out目录
   images: {
     domains: ['raw.githubusercontent.com'],
     remotePatterns: [
@@ -12,6 +13,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+    unoptimized: true,  // 为静态导出禁用图片优化
   },
 };
 

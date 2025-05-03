@@ -15,7 +15,8 @@
 
 # next.js
 /.next/
-/out/
+# 允许提交构建后的静态文件
+# /out/
 
 # production
 /build
