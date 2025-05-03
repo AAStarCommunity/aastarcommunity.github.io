@@ -1,27 +1,95 @@
-# AAStar website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## How to deploy
-### 构建静态站点: 
-运行 pnpm run build。这会在 website 目录下生成一个 out 文件夹，包含所有静态文件。
+## Getting Started
 
-设置 GitHub Actions 工作流 (推荐):
-在 website/.github/workflows/ 目录下创建一个 YAML 文件 (例如 deploy.yml)。
+First, run the development server:
 
-### 配置这个工作流，使其在推送到 main 分支时触发。
-工作流步骤应包括：检出代码 -> 设置 Node.js 和 pnpm -> 安装依赖 (pnpm install) -> 构建静态文件 (pnpm run build) -> 将 out 目录的内容部署到 gh-pages 分支 (可以使用 peaceiris/actions-gh-pages 等 Action)。
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### 配置 GitHub 仓库:
-在你的 GitHub 仓库设置中，找到 "Pages" 部分。
-将部署源设置为 "Deploy from a branch"。
-选择 gh-pages 作为源分支，根目录 / (root) 作为路径。
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 绑定自定义域名:
-在 GitHub Pages 设置中，输入你的自定义域名并保存。GitHub 会检查 DNS 配置。
-创建 CNAME 文件 (如果 GitHub 没自动创建): 在 website/public/ 目录下创建一个名为 CNAME 的文件（没有扩展名），里面只包含你的自定义域名 (例如 www.yourdomain.com)。这个文件需要随静态文件一起部署到 gh-pages 分支。
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### 配置 DNS: 
-在你的域名提供商处，配置 DNS 记录：
-如果你使用 Apex 域名 (e.g., yourdomain.com)，创建 A 记录指向 GitHub Pages 的 IP 地址 (请查阅 GitHub Pages 最新文档获取这些 IP)。
-如果你使用子域名 (e.g., www.yourdomain.com)，创建一个 CNAME 记录指向 你的用户名.github.io。
-等待 DNS 记录生效（可能需要几小时）。
-(推荐) 在 GitHub Pages 设置中强制 HTTPS。
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on GitHub Pages
+
+This project is configured to use local builds for GitHub Pages deployment, which makes the deployment process faster.
+
+### Build and Deploy Process
+
+1. Make your changes to the website
+2. Run the build-and-push script to build locally and push to GitHub:
+
+```bash
+# Make the script executable (first time only)
+chmod +x build-and-push.sh
+
+# Run the script
+./build-and-push.sh
+```
+
+3. The script will:
+   - Build the Next.js site locally
+   - Add the generated `out` directory to git
+   - Check for changes in GitHub Actions workflow files
+   - Commit and push the changes
+   - GitHub Actions will then automatically deploy the pre-built files to GitHub Pages
+
+4. **Important**: If you've modified the GitHub Actions workflow files, you need to commit those separately:
+
+```bash
+# From the project root, not the website subdirectory
+cd ..
+git add .github/workflows/nextjs.yml
+git commit -m "Update GitHub workflow file"
+git push
+```
+
+### Manual Process
+
+If you prefer to do it manually:
+
+```bash
+# Build the site
+pnpm build
+
+# Add the generated files
+git add out/
+git add .
+
+# Commit
+git commit -m "Update website"
+
+# Push to GitHub
+git push
+
+# If you've modified GitHub Actions workflow files
+cd ..
+git add .github/workflows/
+git commit -m "Update GitHub workflow files"
+git push
+```
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

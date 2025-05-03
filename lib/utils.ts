@@ -10,6 +10,11 @@ export function getAssetPath(path: string): string {
   // 移除开头的斜杠以防止路径重复
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   
-  // 不再需要添加子目录前缀，因为仓库已重命名为组织主页
+  // 在生产环境中添加basePath前缀
+  if (process.env.NODE_ENV === 'production') {
+    return `/AAStar-Website/${cleanPath}`;
+  }
+  
+  // 开发环境使用相对路径
   return `/${cleanPath}`;
-} 
+}
