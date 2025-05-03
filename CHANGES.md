@@ -1,5 +1,18 @@
 # AAStar Website 修改日志
 
+## 版本 0.1.8 (2024-05-03)
+
+### 修复
+- 修复GitHub Actions工作流文件中的路径配置
+- 更新artifact上传路径为`'./out'`而不是`'./website/out'`
+
+### 影响的文件
+- .github/workflows/nextjs.yml - 更新路径配置
+
+### 潜在影响
+- 修复了GitHub Actions部署失败的问题
+- 确保自动部署使用正确的静态文件目录
+
 ## 版本 0.1.7 (2024-05-03)
 
 ### 重大调整
