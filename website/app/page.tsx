@@ -160,15 +160,18 @@ const Header: React.FC = () => {
           <NavigationMenuList>
             {globalData.header.nav.map((item) => (
               <NavigationMenuItem key={item.label}>
-                <Link href={item.href} legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={navigationMenuTriggerStyle()}
+                <NavigationMenuLink
+                  className={navigationMenuTriggerStyle()}
+                  asChild
+                >
+                  <Link 
+                    href={item.href}
                     target={item.openSite ? '_blank' : undefined}
                     rel={item.openSite ? 'noopener noreferrer' : undefined}
                   >
                     {item.label}
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
@@ -271,8 +274,8 @@ const ImagePlaceholder: React.FC<{ title: string, src: string }> = ({ title, src
   <div className="container mx-auto py-16 px-4">
     <h2 className="text-3xl font-semibold text-blue-800 text-center mb-8">{title}</h2>
     <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-dashed border-blue-300 rounded-lg aspect-video flex items-center justify-center text-blue-500 font-semibold text-xl md:text-2xl text-center p-4 relative overflow-hidden min-h-[300px]">
-      {/* Use fill layout for Image */}
-       <Image src={src} alt={title} layout="fill" objectFit="contain" priority={false} />
+      {/* Use fill property for Image */}
+       <Image src={src} alt={title} fill style={{ objectFit: 'contain' }} priority={false} />
        {/* Fallback text removed, image should cover */}
     </div>
      <p className="text-center text-gray-500 mt-2">We are forwarding to the Vision</p>
