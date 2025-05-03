@@ -7,11 +7,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import {
-  BiStar, // Icon from global config
-  BiWorld,
-  BiPlay,
-} from 'react-icons/bi'; // Basic icons
-import {
   SiGithub,
   SiTelegram,
   SiX, // Changed from SiTwitter to SiX for X logo
@@ -144,21 +139,6 @@ const simpleMarkdownToHtml = (md: string): string => {
   // Final cleanup for potential multiple <br> if paragraph logic is too simple
   md = md.replace(/(<br\s*\/?>\s*){2,}/gi, '<br />'); // Consolidate multiple breaks
   return md;
-};
-
-// Get Icon Component
-const getIcon = (iconName: string) => {
-  switch (iconName) {
-    case 'BiStar': return <BiStar />;
-    case 'BiWorld': return <BiWorld />;
-    case 'BiPlay': return <BiPlay />;
-    case 'SiGithub': return <SiGithub />;
-    case 'SiTelegram': return <SiTelegram />;
-    case 'SiTwitter': return <SiX />; // Map SiTwitter usage to SiX component
-    case 'SiX': return <SiX />; // Direct mapping for SiX
-    case 'SiMedium': return <SiMedium />;
-    default: return null;
-  }
 };
 
 // Header Component
