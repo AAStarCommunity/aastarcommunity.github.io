@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+import { getAssetPath } from '@/lib/utils';
 import {
   SiGithub,
   SiTelegram,
@@ -294,10 +295,10 @@ export default function Home() {
         <ContentSection id="about" content={aboutContent} bgColor="bg-white"/>
         <FeaturesSection id="focus" title="Our Features" items={focusItems} bgColor="bg-blue-50" />
         {/* Placeholder for Architecture Diagram */}
-        <ImagePlaceholder title="Architecture Diagram" src="/uploads/architecture.png" />
+        <ImagePlaceholder title="Architecture Diagram" src={getAssetPath('uploads/architecture.png')} />
         <ContentSection id="problem" content={problemSolutionContent} bgColor="bg-white"/>
          {/* Placeholder for Roadmap */}
-        <ImagePlaceholder title="Roadmap" src="/uploads/roadmap.png" />
+        <ImagePlaceholder title="Roadmap" src={getAssetPath('uploads/roadmap.png')} />
         <ContentSection id="team" content={teamContent} bgColor="bg-blue-50"/>
         <ContentSection id="links" content={linksContent} bgColor="bg-white"/>
       </main>

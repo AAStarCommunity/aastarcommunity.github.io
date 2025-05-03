@@ -1,5 +1,22 @@
 # AAStar Website 修改日志
 
+## 版本 0.1.5 (2024-05-03)
+
+### 修复
+- 修复GitHub Pages部署后CSS和资源无法加载的问题
+- 在next.config.ts中添加basePath和assetPrefix配置
+- 添加getAssetPath工具函数处理资源路径前缀
+- 修改图片引用路径，使用动态生成的路径
+
+### 影响的文件
+- website/next.config.ts - 添加GitHub Pages子路径支持
+- website/lib/utils.ts - 添加资源路径处理工具函数
+- website/app/page.tsx - 更新图片路径引用
+
+### 潜在影响
+- 修复了GitHub Pages部署后CSS和资源加载问题
+- 确保网站在GitHub Pages子路径下能正确显示
+
 ## 版本 0.1.4 (2024-05-03)
 
 ### 修复
