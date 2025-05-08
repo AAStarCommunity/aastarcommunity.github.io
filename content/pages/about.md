@@ -13,7 +13,7 @@ blocks:
       construction. We will focus on Account Abstraction in Ethereum Roadmap.
 
 
-      **Mission**: Leverage Up the Power of Community for Ethereum AA Roadmap.
+      **Mission**: Empower Community with  Ethereum AA.
 
 
       Vision: A better digital future for humanity with Simple Account by
