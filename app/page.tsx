@@ -21,7 +21,7 @@ const inter = Inter({ subsets: ['latin'] });
 const globalData = {
   header: {
     icon: { name: 'BiStar', color: 'text-orange-500' }, // Map color name to tailwind class
-    name: 'AAStar - Empower Community with AA',
+    name: 'AAStar - Build Decentralized Infra for Community.',
     nav: [
       { href: '#home', label: 'Home' }, // Use anchors for single page
       { href: '#about', label: 'About' },

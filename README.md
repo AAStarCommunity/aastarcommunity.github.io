@@ -1,3 +1,10 @@
+# Website of AAStar Community
+Transfer from Tina to github pages, just single page webstation.
+Build Decentralized Infra for Community!
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
