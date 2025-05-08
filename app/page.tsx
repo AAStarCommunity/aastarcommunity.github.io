@@ -206,10 +206,10 @@ const HeroSection: React.FC = () => (
   <section id="home" className="py-20 md:py-32 bg-gradient-to-br from-blue-50 via-blue-100 to-white text-center">
     <div className="container mx-auto px-4">
        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-800 mb-4">
-         AAStar: Leverage Up the Power of Community
+       Leverage Up the Power of Community🍄
        </h1>
        <p className="text-xl md:text-2xl text-blue-700 mb-8">
-         Building a better digital future for humanity with Simple Account by AAStar!
+         Building a better human digital future！
        </p>
        <div className="space-x-4">
           <Button size="lg" asChild>
