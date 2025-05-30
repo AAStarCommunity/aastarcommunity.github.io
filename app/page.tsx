@@ -25,7 +25,7 @@ const globalData = {
     nav: [
       { href: '#home', label: 'Home' }, // Use anchors for single page
       { href: '#about', label: 'About' },
-      // { href: "posts", label: "Blog" }, // Blog might be separate page later
+      { href: "https://www.aastar.io/research", label: "Research" }, 
       { href: 'https://docs.aastar.io/', label: 'Doc', openSite: true },
       { href: 'https://github.com/AAStarCommunity', label: 'Github', openSite: true },
     ],
@@ -43,39 +43,40 @@ const globalData = {
 const aboutContent = `
 ## What is AAStar?
 
-AAStar^ is a subgroup of Plancker^ community. We launched AAStar after a conversation with Vitalik at Zuzalu, Montenegro in 2022.
+<h3>AAStar^ is a subgroup of Plancker^ community. We launched AAStar after a conversation with Vitalik at Zuzalu, Montenegro in 2022.</h3>
 
-We will commit to the Ethereum for long term contribution and construction. We will focus on Account Abstraction in Ethereum Roadmap.
+<h3>We will commit to the Ethereum for long term contribution and construction, focus on Account Abstraction and relate infra.</h3>
 
-**Mission**: Empower Community with Ethereum AA.
+<h3>**Mission**: Empower Community.</h3>
 
-**Vision**: A better digital future for humanity with Simple Account by AAStar！
+<h3>**Vision**: A better digital future for humanity.</h3>
 
-**Value**: A Gift for Human from AAStar Hackers.
+<h3>**Value**: A Gift for Human from AAStar Hackers.</h3>
 
 ## What are we building?
 
 *   **SuperPaymaster**: A simple gas payment framework utilizing ERC4337 and EIP7702.
 *   **AirAccount**: An easy interface for your Ethereum account life cycle.
 *   **Comet ENS**: A meaningful name for your addresses in Ethereum.
-*   **More...**
+*   **[More...](https://www.aastar.io/research)**
 `;
 
 const focusItems = [
-    { title: 'Credential Binding', text: 'Bind any credential: Web2 accounts, EOAs, Email, SMS.' },
-    { title: 'Secure Account Generation', text: 'TEE-based encrypted account generation and management on ARM.' },
-    { title: 'Double Verification', text: 'Fingerprint and TEE-based secondary verification with enhanced AI security checks.' },
-    { title: 'Full Account Lifecycle Management', text: 'AA-based management: social recovery, will execution, daily limits, etc.' },
-    { title: 'Gasless & Seamless Transactions', text: 'Intuitive Web2-like experiences (payments, tips, likes, NFTs) powered by AA.' },
-    { title: 'True Decentralization', text: 'Decentralized accounts with fingerprint + TEE + secure computation validators for user data sovereignty.' },
-    { title: 'Ultra Security', text: 'Layered security solutions tailored for different user needs.' },
-    { title: 'dApps Portal', text: 'Curated list of dApps supporting EIP1271 and experimental EIP7702 applications.' },
+    { title: 'Credential Binding🔗 ', text: 'Bind any credential: Web2 accounts, EOAs, Email, SMS.' },
+    { title: 'Secure Account Generation🛡️', text: 'TEE-based encrypted account generation and management on ARM.' },
+    { title: 'Dual Verification 👆 ', text: 'Fingerprint and TEE-based secondary verification with enhanced AI security checks.' },
+    { title: 'Full Account Lifecycle Management♻️ ', text: 'AA-based management: social recovery, will execution, daily limits, etc.' },
+    { title: 'Gasless & Seamless Transactions⚡', text: 'Intuitive Web2-like experiences (payments, tips, likes, NFTs) powered by AA.' },
+    { title: 'True Decentralization🌐', text: 'Decentralized accounts with fingerprint + TEE + secure computation validators for user data sovereignty.' },
+    { title: 'Ultra Security🔒', text: 'Layered security solutions tailored for different user needs.' },
+    { title: 'dApps Portal🚪', text: 'Curated list of dApps supporting EIP1271 and experimental EIP7702 applications.' },
 ];
 
 const problemSolutionContent = `
 ## What Problems Do We Solve?
 
 The first barrier to mass adoption of blockchain: simple, secure, and user-friendly crypto accounts.
+The second is motivation: why should I use blockchain? We choose the answer: DApps and create infra for DApps.
 
 ## Who Are Our Core Users?
 
@@ -108,10 +109,6 @@ const linksContent = `
 *   Media Kit(logos): [Logos Drive](https://drive.google.com/drive/folders/1yoxcnmkVMUaLKzfmv-YRv_QucEu7Dh9X?usp=sharing)
 *   Twitter: [AAStar](https://twitter.com/aaStarCommunity)
 *   Medium: [AAStar Medium](https://medium.com/@AAStarCommunity)
-
-*   Docs: [docs.aastar.io](https://docs.aastar.io) | [docs.aastar.xyz](https://docs.aastar.xyz)
-*   Paymaster relay: [paymaster.aastar.xyz](https://paymaster.aastar.xyz) | [paymaster.aastar.io](https://paymaster.aastar.io)
-*   Demo: [demoweb.aastar.io](https://demoweb.aastar.io)
 
 ## Operation Contact
 
@@ -294,10 +291,10 @@ export default function Home() {
         <ContentSection id="about" content={aboutContent} bgColor="bg-white"/>
         <FeaturesSection id="focus" title="Our Features" items={focusItems} bgColor="bg-blue-50" />
         {/* Placeholder for Architecture Diagram */}
-        <ImagePlaceholder title="Architecture Diagram" src="/uploads/architecture.png" />
+        <ImagePlaceholder title="Architecture Diagram" src="https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202505301531347.png" />
         <ContentSection id="problem" content={problemSolutionContent} bgColor="bg-white"/>
          {/* Placeholder for Roadmap */}
-        <ImagePlaceholder title="Roadmap" src="/uploads/roadmap.png" />
+        <ImagePlaceholder title="AirAccount Roadmap" src="https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202505301525779.png" />
         <ContentSection id="team" content={teamContent} bgColor="bg-blue-50"/>
         <ContentSection id="links" content={linksContent} bgColor="bg-white"/>
       </main>
