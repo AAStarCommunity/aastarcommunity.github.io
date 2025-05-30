@@ -101,7 +101,7 @@ const linksContent = `
 ## More Information & Official Docs
 
 *   GitHub: [AAStar](https://github.com/aaStarCommunity)
-*   Website: [AAStar.io](https://www.aastar.io)
+*   Website: [AAStary.io](https://www.aastar.io)
 *   Telegram: [AAStar Community](https://t.me/Account_Abstraction_Community)
 *   Youtube: [AAStar Channel](https://www.youtube.com/channel/UCc9ingOIgPXdV7UyCMEsoEg)
 *   Bilibili: [AAStar Bilibili](https://space.bilibili.com/3546672630074343/)
