@@ -43,7 +43,7 @@ const globalData = {
 const aboutContent = `
 ## What is AAStar?
 
-<h3>AAStar^ is a subgroup of Plancker^ community. We launched AAStar after a conversation with Vitalik at Zuzalu, Montenegro in 2022.</h3>
+<h3>AAStar^ is a subgroup of Plancker^ community. We launched AAStar after a conversation with Vitalik at Zuzalu, Montenegro in 2023.</h3>
 
 <h3>We will commit to the Ethereum for long term contribution and construction, focus on Account Abstraction and relate infra.</h3>
 
@@ -206,7 +206,7 @@ const HeroSection: React.FC = () => (
        Empower Community🍄
        </h1>
        <p className="text-xl md:text-2xl text-blue-700 mb-8">
-         For a better human digital future！
+         For a better human digital future!
        </p>
        <div className="space-x-4">
           <Button size="lg" asChild>

@@ -6,7 +6,7 @@ blocks:
 
 
       AAStar^ is a subgroup of Plancker^ community. We launched AAStar after a
-      conversation with Vitalik at Zuzalu, Montenegro in 2022.
+      conversation with Vitalik at Zuzalu, Montenegro in 2023.
 
 
       We will commit to the Ethereum for long term contribution and
