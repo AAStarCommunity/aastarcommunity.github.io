@@ -26,8 +26,8 @@ const globalData = {
       { href: '#home', label: 'Home' }, // Use anchors for single page
       { href: '#about', label: 'About' },
       { href: "https://www.aastar.io/research", label: "Research", openSite: true }, 
-      { href: '#docs', label: 'Doc', openSite: true },
-      { href: 'https://github.com/AAStarCommunity', label: 'Github', openSite: true },
+      { href: "https://www.aastar.io/docs", label: 'Doc', openSite: true },
+      { href: "https://github.com/AAStarCommunity", label: 'Github', openSite: true },
     ],
   },
   footer: {
