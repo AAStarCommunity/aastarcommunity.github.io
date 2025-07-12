@@ -25,8 +25,8 @@ const globalData = {
     nav: [
       { href: '#home', label: 'Home' }, // Use anchors for single page
       { href: '#about', label: 'About' },
-      { href: "https://www.aastar.io/research", label: "Research" }, 
-      { href: 'https://docs.aastar.io/', label: 'Doc', openSite: true },
+      { href: "#research", label: "Research" }, 
+      { href: '#docs', label: 'Doc', openSite: true },
       { href: 'https://github.com/AAStarCommunity', label: 'Github', openSite: true },
     ],
   },
@@ -58,7 +58,7 @@ const aboutContent = `
 *   **SuperPaymaster**: A simple gas payment framework utilizing ERC4337 and EIP7702.
 *   **AirAccount**: An easy interface for your Ethereum account life cycle.
 *   **Comet ENS**: A meaningful name for your addresses in Ethereum.
-*   **[More...](https://www.aastar.io/research)**
+*   **[More...](https://www.aastar.io/#research)**
 `;
 
 const focusItems = [
