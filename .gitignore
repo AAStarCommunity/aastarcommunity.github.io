@@ -14,12 +14,10 @@
 /coverage
 
 # next.js
-/.next/
-# 允许提交构建后的静态文件
-# /out/
-
 # production
+/dist
 /build
+/out
 
 # misc
 .DS_Store

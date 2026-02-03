@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
@@ -87,19 +85,21 @@ const SubdomainLinks: React.FC = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {subdomains.products.map((item) => (
-              <Link
+              <a
                 href={item.link}
                 key={item.name}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="block h-full"
               >
                 <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg border border-gray-200 flex flex-col bg-white p-4 h-full">
                   <CardContent className="pt-2 flex-grow flex flex-col items-center">
-                    <Image
+                    <img
                       src={item.svg}
                       alt={item.name}
                       width={100}
                       height={55}
+                      loading="lazy"
                     />
                     <h4 className="text-lg font-semibold text-blue-800 mt-4">
                       {item.name}
@@ -109,7 +109,7 @@ const SubdomainLinks: React.FC = () => {
                     </p>
                   </CardContent>
                 </Card>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -118,19 +118,21 @@ const SubdomainLinks: React.FC = () => {
           <h3 className="text-2xl font-semibold text-blue-800 mb-6">Tools</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {subdomains.tools.map((item) => (
-              <Link
+              <a
                 href={item.link}
                 key={item.name}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="block h-full"
               >
                 <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg border border-gray-200 flex flex-col bg-white p-4 h-full">
                   <CardContent className="pt-2 flex-grow flex flex-col items-center">
-                    <Image
+                    <img
                       src={item.svg}
                       alt={item.name}
                       width={100}
                       height={55}
+                      loading="lazy"
                     />
                     <h4 className="text-lg font-semibold text-blue-800 mt-4">
                       {item.name}
@@ -140,7 +142,7 @@ const SubdomainLinks: React.FC = () => {
                     </p>
                   </CardContent>
                 </Card>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -149,19 +151,21 @@ const SubdomainLinks: React.FC = () => {
           <h3 className="text-2xl font-semibold text-blue-800 mb-6">Infra</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {subdomains.infra.map((item) => (
-              <Link
+              <a
                 href={item.link}
                 key={item.name}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="block h-full"
               >
                 <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg border border-gray-200 flex flex-col bg-white p-4 h-full">
                   <CardContent className="pt-2 flex-grow flex flex-col items-center">
-                    <Image
+                    <img
                       src={item.svg}
                       alt={item.name}
                       width={100}
                       height={55}
+                      loading="lazy"
                     />
                     <h4 className="text-lg font-semibold text-blue-800 mt-4">
                       {item.name}
@@ -171,7 +175,7 @@ const SubdomainLinks: React.FC = () => {
                     </p>
                   </CardContent>
                 </Card>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { Inter } from "next/font/google";
+// Image and Link are now standard HTML or handled internally
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -15,29 +13,24 @@ import {
 import {
   SiGithub,
   SiTelegram,
-  SiX, // Changed from SiTwitter to SiX for X logo
+  SiX,
   SiMedium,
-  // Add other icons if needed based on content sections
-} from "react-icons/si"; // Simple Icons for social media
+} from "react-icons/si";
 import SubdomainLinks from "@/components/subdomain-links";
-
-const inter = Inter({ subsets: ["latin"] });
-
-// --- Data extracted from content files (or provided) ---
 
 const globalData = {
   header: {
-    icon: { name: "BiStar", color: "text-orange-500" }, // Map color name to tailwind class
+    icon: { name: "BiStar", color: "text-orange-500" },
     name: "AAStar - Build Decentralized Infra for Community.",
     nav: [
-      { href: "#home", label: "Home" }, // Use anchors for single page
+      { href: "#home", label: "Home" },
       { href: "#about", label: "About" },
       {
         href: "https://www.aastar.io/research",
         label: "Research",
         openSite: true,
       },
-      { href: "https://www.aastar.io/docs", label: "Doc", openSite: true },
+      { href: "https://docs.aastar.io", label: "Docs", openSite: true },
       {
         href: "https://github.com/AAStarCommunity",
         label: "Github",
@@ -48,7 +41,7 @@ const globalData = {
   footer: {
     social: {
       telegram: "https://t.me/Account_Abstraction_Community",
-      twitter: "https://x.com/aaStarCommunity", // Link to X
+      twitter: "https://x.com/aaStarCommunity",
       medium: "https://medium.com/@AAStarCommunity",
       github: "https://github.com/AAStarCommunity/aastarcommunity.github.io",
     },
@@ -154,33 +147,23 @@ const linksContent = `
 *   Telegram channel: [AAStar Community](https://t.me/Account_Abstraction_Community)
 `;
 
-// --- Helper Functions & Components ---
-
-// Simple markdown-to-HTML converter
 const simpleMarkdownToHtml = (md: string): string => {
-  // Handle Headers (##)
   md = md.replace(
     /^## (.*$)/gim,
     '<h2 class="text-2xl font-semibold text-blue-800 mb-4 mt-6">$1</h2>',
   );
-  // Handle Bold (**)
   md = md.replace(
     /\*\*(.*?)\*\*/gim,
     '<strong class="font-semibold">$1</strong>',
   );
-  // Handle Bold within lists (*)
   md = md.replace(/^(\s*\*.*?)(\*\*.*?\*\*)/gim, "$1<strong>$2</strong>");
-  // Handle Links ([text](url))
   md = md.replace(
     /\[(.*?)\]\((.*?)\)/gim,
     '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">$1</a>',
   );
-  // Handle simple unordered lists (*) - basic conversion
   md = md.replace(/^\* (.*$)/gim, '<li class="ml-5 list-disc">$1</li>');
-  // Wrap list items in <ul> potentially needed, but complex regex. Keep simple for now.
-  // Handle Paragraphs (replace double newlines) - basic
   md = md
-    .split("\\n\\n")
+    .split("\n\n")
     .map((p) => p.trim())
     .filter((p) => p.length > 0)
     .map(
@@ -188,18 +171,16 @@ const simpleMarkdownToHtml = (md: string): string => {
         `<p class="mb-4">${p.replace(/^\s*\*\s/, "").replace(/\n/g, "<br />")}</p>`,
     )
     .join("");
-  // Final cleanup for potential multiple <br> if paragraph logic is too simple
-  md = md.replace(/(<br\s*\/?>\s*){2,}/gi, "<br />"); // Consolidate multiple breaks
+  md = md.replace(/(<br\s*\/?>\s*){2,}/gi, "<br />");
   return md;
 };
 
-// Header Component
 const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center mx-auto px-4">
-        <Link href="#home" className="mr-6 flex items-center space-x-2">
-          <Image
+        <a href="#home" className="mr-6 flex items-center space-x-2">
+          <img
             src="https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202505031325963.png"
             alt="AAStar Logo"
             width={32}
@@ -209,7 +190,7 @@ const Header: React.FC = () => {
           <span className="font-bold sm:inline-block text-blue-800">
             {globalData.header.name}
           </span>
-        </Link>
+        </a>
         <NavigationMenu className="hidden md:flex ml-auto">
           <NavigationMenuList>
             {globalData.header.nav.map((item) => (
@@ -218,25 +199,23 @@ const Header: React.FC = () => {
                   className={navigationMenuTriggerStyle()}
                   asChild
                 >
-                  <Link
+                  <a
                     href={item.href}
                     target={item.openSite ? "_blank" : undefined}
                     rel={item.openSite ? "noopener noreferrer" : undefined}
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
           </NavigationMenuList>
         </NavigationMenu>
-        {/* Add Mobile Menu Button and Sheet component here if needed */}
       </div>
     </header>
   );
 };
 
-// Footer Component
 const Footer: React.FC = () => {
   const socialLinks = globalData.footer.social;
   return (
@@ -244,46 +223,45 @@ const Footer: React.FC = () => {
       <div className="container mx-auto text-center px-4">
         <div className="flex justify-center space-x-6 text-2xl mb-4">
           {socialLinks.github && (
-            <Link
+            <a
               href={socialLinks.github}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
             >
               <SiGithub />
-            </Link>
+            </a>
           )}
           {socialLinks.twitter && (
-            <Link
+            <a
               href={socialLinks.twitter}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
             >
               <SiX />
-            </Link>
+            </a>
           )}
           {socialLinks.telegram && (
-            <Link
+            <a
               href={socialLinks.telegram}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
             >
               <SiTelegram />
-            </Link>
+            </a>
           )}
           {socialLinks.medium && (
-            <Link
+            <a
               href={socialLinks.medium}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
             >
               <SiMedium />
-            </Link>
+            </a>
           )}
-          {/* Add other social icons here */}
         </div>
         <p>
           &copy; {new Date().getFullYear()} AAStar Community. All rights
@@ -294,7 +272,6 @@ const Footer: React.FC = () => {
   );
 };
 
-// Hero Component (Simple version based on Mission/Vision)
 const HeroSection: React.FC = () => (
   <section
     id="home"
@@ -302,30 +279,29 @@ const HeroSection: React.FC = () => (
   >
     <div className="container mx-auto px-4">
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-800 mb-4">
-        Empower Community🍄
+        Empower Community, Unleash Humanity🍄
       </h1>
       <p className="text-xl md:text-2xl text-blue-700 mb-8">
         For a better human digital future!
       </p>
       <div className="space-x-4">
         <Button size="lg" asChild>
-          <Link href="#about">Learn More</Link>
+          <a href="#about">Learn More</a>
         </Button>
         <Button size="lg" variant="outline" asChild>
-          <Link
+          <a
             href={globalData.footer.social.telegram || "#"}
             target="_blank"
             rel="noopener noreferrer"
           >
             Join Telegram
-          </Link>
+          </a>
         </Button>
       </div>
     </div>
   </section>
 );
 
-// Generic Content Section
 interface ContentSectionProps {
   id?: string;
   title?: string;
@@ -345,7 +321,6 @@ const ContentSection: React.FC<ContentSectionProps> = ({
           {title}
         </h2>
       )}
-      {/* Use prose to style the generated HTML */}
       <div
         className="prose prose-blue max-w-none prose-li:list-disc prose-li:ml-5"
         dangerouslySetInnerHTML={{ __html: simpleMarkdownToHtml(content) }}
@@ -354,11 +329,10 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   </section>
 );
 
-// Features Section Component
 interface FeaturesSectionProps {
   id?: string;
   title: string;
-  items: Array<{ title: string; text: string; icon?: string }>; // Optional icon name
+  items: Array<{ title: string; text: string; icon?: string }>;
   bgColor?: string;
 }
 const FeaturesSection: React.FC<FeaturesSectionProps> = ({
@@ -381,7 +355,6 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
             key={index}
             className="shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg border border-gray-200 flex flex-col bg-white p-4"
           >
-            {/* Removed CardHeader and adjusted CardContent padding */}
             <CardContent className="pt-2 flex-grow">
               <h3 className="text-lg font-semibold text-blue-800 mb-2">
                 {item.title}
@@ -395,7 +368,6 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({
   </section>
 );
 
-// Image Placeholder Component
 const ImagePlaceholder: React.FC<{ title: string; src: string }> = ({
   title,
   src,
@@ -405,15 +377,12 @@ const ImagePlaceholder: React.FC<{ title: string; src: string }> = ({
       {title}
     </h2>
     <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-dashed border-blue-300 rounded-lg aspect-video flex items-center justify-center text-blue-500 font-semibold text-xl md:text-2xl text-center p-4 relative overflow-hidden min-h-[300px]">
-      {/* Use fill property for Image */}
-      <Image
+      <img
         src={src}
         alt={title}
-        fill
-        style={{ objectFit: "contain" }}
-        priority={false}
+        style={{ width: "100%", height: "100%", objectFit: "contain" }}
+        loading="lazy"
       />
-      {/* Fallback text removed, image should cover */}
     </div>
     <p className="text-center text-gray-500 mt-2">
       We are forwarding to the Vision
@@ -421,11 +390,9 @@ const ImagePlaceholder: React.FC<{ title: string; src: string }> = ({
   </div>
 );
 
-// --- Page Component ---
-
-export default function Home() {
+export default function App() {
   return (
-    <div className={`${inter.className} flex flex-col min-h-screen`}>
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
         <HeroSection />
@@ -437,7 +404,6 @@ export default function Home() {
           bgColor="bg-blue-50"
         />
         <SubdomainLinks />
-        {/* Placeholder for Architecture Diagram */}
         <ImagePlaceholder
           title="Architecture Diagram"
           src="https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202505301531347.png"
@@ -447,7 +413,6 @@ export default function Home() {
           content={problemSolutionContent}
           bgColor="bg-white"
         />
-        {/* Placeholder for Roadmap */}
         <ImagePlaceholder
           title="AirAccount Roadmap"
           src="https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202505301525779.png"

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* tw-animate-css can be added as a plugin in vite.config.ts if needed, 
+   or just imported here if it's a standard CSS file. */
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
