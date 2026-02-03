@@ -62,7 +62,7 @@ const aboutContent = `
 
 <h3>We will commit to the Ethereum for long term contribution and construction, focus on Account Abstraction and relate infra.</h3>
 
-<h3>**Mission**: Empower Community.</h3>
+<h3>**Mission**: Empower Community, Unleash Humanity.</h3>
 
 <h3>**Vision**: A better digital future for humanity.</h3>
 
