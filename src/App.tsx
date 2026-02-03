@@ -268,7 +268,7 @@ const Footer: React.FC = () => {
           reserved.
         </p>
         <p className="text-xs text-blue-300 mt-2">
-          Last Updated: {new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })} (CST)
+          Last Updated: {new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })} (CST) - Verifying Action
         </p>
       </div>
     </footer>
