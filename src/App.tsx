@@ -267,6 +267,9 @@ const Footer: React.FC = () => {
           &copy; {new Date().getFullYear()} AAStar Community. All rights
           reserved.
         </p>
+        <p className="text-xs text-blue-300 mt-2">
+          Last Updated: {new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })} (CST)
+        </p>
       </div>
     </footer>
   );
