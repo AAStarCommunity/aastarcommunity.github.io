@@ -43,19 +43,21 @@ pnpm preview
 
 ## Deployment
 
-This project uses GitHub Actions for automated deployment.
+This project is deployed on **Cloudflare Pages** using its native GitHub integration.
+
+### Cloudflare Pages Settings
+
+To ensure successful builds, configure your Cloudflare Pages project with these settings:
+
+- **Framework Preset**: `Vite`
+- **Build command**: `pnpm run build`
+- **Build output directory**: `dist`
+- **Root directory**: `/`
+- **Node.js Version**: `20` or higher
 
 ### Automatic Deployment
 
-Any push to the `main` or `static-2026` branch will trigger a GitHub Action that:
-1. Builds the project (`pnpm build`).
-2. Deploys the static `dist/` directory to Cloudflare Pages.
-
-### Configuration
-
-Ensure the following GitHub Secrets are configured in your repository:
-- `CLOUDFLARE_API_TOKEN`
-- `CLOUDFLARE_ACCOUNT_ID`
+Any push to the `main` branch will automatically trigger a build and deployment on Cloudflare.
 
 ## License
 
